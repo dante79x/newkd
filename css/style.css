@@ -1,3 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #f7f7f7;
+}
+/* font-family: 'Open Sans Condensed', sans-serif; */
+.kondensed {
+    font-family: 'Open Sans Condensed', sans-serif;  
+}
+
+/*drukuj*/
+
+.drukuj{
+    line-height: 1em;
+}
+
+.imgesp{
+    border-radius: 8px;
+}
+
+
+/*buttony*/
+
+.but {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #222;
+    padding: 15px 60px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  }
+  
+  .but span {
+    position: relative; 
+    z-index: 1;
+  }
+  
+  .but:after {
+     content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #e6cf00;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  
+  .but:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+
+  a.but{
+      color:#fff;
+      text-decoration: none;
+  }
+  a.but:hover{
+      color:#fff;
+      text-decoration: none;
+  }
+
+
+  .ulfooter {list-style-position: outside;
+    list-style-type: circle;
+    margin-left: -20px;
+}
+.linkwstopie{
+    color: #ac1832;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .linkwstopie:hover{
+    color: #ac1832;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
 .jumbotron {
     margin-top: 50px;
     padding-top: 3rem;
@@ -36,17 +130,7 @@
 
 
 
-  body {
-    margin: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
 
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #f7f7f7;
-}
 .navbar {
     display: -ms-flexbox;
     display: flex;
@@ -183,7 +267,7 @@ ul.social-network {
 
 /* Copy Right Footer */
 .footer-copyright {	background: #222;	padding: 5px 0;}
-.footer-copyright p {	color: #969696;	margin: 2px 0 0;}
+.footer-copyright p {color: #969696;	margin: 2px 0 0; font-size: 12px;}
 
 .copyright-gradient{
     background: -webkit-linear-gradient(135deg, #1b1e21 48%, #e6cf00 48%);
@@ -192,17 +276,17 @@ ul.social-network {
 }
 
 .mx-background-top-linear {
-    background: -webkit-linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
-    background: -webkit-linear-gradient(left, #54d400 48%, #1b1e21 48%);
+    background: -webkit-linear-gradient(45deg, #e6cf00 48%, #1b1e21 48%);
+    background: -webkit-linear-gradient(left, #e6cf00 48%, #1b1e21 48%);
     background: linear-gradient(45deg, #e6cf00 48%, #1b1e21 48%);
 }
 
-
+/*karty*/
 .card-title{
     font-weight: 700 !important;
     margin-top: 10px;
     color: #3c4858;
-    font-family: Roboto Slab,Times New Roman,serif;
+    
 }
 .card {
     border: 0;
